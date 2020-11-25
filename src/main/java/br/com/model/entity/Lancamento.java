@@ -19,9 +19,11 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import br.com.model.enuns.StatusLancamento;
 import br.com.model.enuns.TipoLancamento;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -32,6 +34,8 @@ import lombok.ToString;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Lancamento {
 	
 	@Id
